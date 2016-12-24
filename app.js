@@ -17,7 +17,9 @@ var userRoutes = require("./routes/user");
 
 var app = express();
 
-mongoose.connect("mongodb://localhost/shopping-cart");
+//mongoose.connect("mongodb://localhost/shopping-cart");
+mongoose.connect("mongodb://Vikram_Kalta:boomshankar1@ds145208.mlab.com:45208/sellstuff");
+
 require("./config/passport");
 
 app.engine(".hbs", expressHbs({defaultLayout: "layout", extname: ".hbs"}));
