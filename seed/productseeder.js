@@ -1,7 +1,7 @@
 var Product = require("../models/product");
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/shopping-cart");
-//mongoose.connect("mongodb://Vikram_Kalta:boomshankar1@ds145208.mlab.com:45208/sellstuff");
+//mongoose.connect("mongodb://localhost/shopping-cart");
+mongoose.connect("mongodb://Vikram_Kalta:boomshankar1@ds145208.mlab.com:45208/sellstuff");
 
 var products = [
     new Product({
