@@ -16,7 +16,8 @@ var userRoutes = require("./routes/user");
 
 var app = express();
 
-mongoose.connect(process.env.DATABASEURL);
+var url = process.env.DATABASEURL || "mongodb://localhost/shopping-cart"
+mongoose.connect(url);
 //mongoose.connect("mongodb://localhost/shopping-cart");
 //mongoose.connect("mongodb://Vikram_Kalta:boomshankar1@ds145208.mlab.com:45208/sellstuff");
 
