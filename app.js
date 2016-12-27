@@ -16,8 +16,10 @@ var userRoutes = require("./routes/user");
 
 var app = express();
 
+mongoose.connect(process.env.DATABASEURL);
 //mongoose.connect("mongodb://localhost/shopping-cart");
-mongoose.connect("mongodb://Vikram_Kalta:boomshankar1@ds145208.mlab.com:45208/sellstuff");
+//mongoose.connect("mongodb://Vikram_Kalta:boomshankar1@ds145208.mlab.com:45208/sellstuff");
+
 
 require("./config/passport");
 
