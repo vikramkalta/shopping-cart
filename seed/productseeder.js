@@ -5,9 +5,11 @@ var mongoose = require("mongoose");
 //mongoose.connect("mongodb://localhost/shopping-cart");
 mongoose.connect("mongodb://Vikram_Kalta:boomshankar1@ds145208.mlab.com:45208/sellstuff");
  
- 
-
-var products = [
+Product.find(function(err, Product){
+    if (err){
+        console.log(err)
+    }else
+    var products = [
     new Product({
    imagePath: "https://i.ytimg.com/vi/b4ySfqwG0hs/maxresdefault.jpg",
    title: "Gothic videogame",
@@ -45,3 +47,5 @@ for (var i = 0; i < products.length; i++){
 function exit(){
     mongoose.disconnect();
 }
+});
+
