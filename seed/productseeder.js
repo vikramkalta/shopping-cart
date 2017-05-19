@@ -3,9 +3,9 @@ var mongoose = require("mongoose");
 
 
 //mongoose.connect("mongodb://localhost/shopping-cart");
-//mongoose.connect("mongodb://Vikram_Kalta:boomshankar1@ds145208.mlab.com:45208/sellstuff");
- mongoose.connect("mongoimport -h ds145208.mlab.com:45208 -d sellstuff -c products -u Vikram_Kalta -p boomshankar1 --file <input file>")
-    var products = [
+mongoose.connect("mongodb://Vikram_Kalta:boomshankar1@ds145208.mlab.com:45208/sellstuff");
+
+var products = [
     new Product({
    imagePath: "https://i.ytimg.com/vi/b4ySfqwG0hs/maxresdefault.jpg",
    title: "Gothic videogame",
@@ -44,3 +44,4 @@ function exit(){
     mongoose.disconnect();
 }
 
+   
